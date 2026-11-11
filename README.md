@@ -1,5 +1,7 @@
 # First Principles Skill Builder
 
+![First Principles Skill Builder: describe a skill, Hermes builds it for your computer](assets/thumbnail.jpg)
+
 You ask for a skill, or you have one that only works on one machine. This plugin
 helps the Hermes agent build or fix it so it works with the tools, hardware,
 subscriptions and permissions you actually have, and says exactly what is missing
