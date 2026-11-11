@@ -1,0 +1,76 @@
+{
+  "curated": "2026-11-10",
+  "status": "source reviewed; offline tests only; no live Hermes session run, no model, network, install or publication",
+  "canonical_source": "The maintainer's First Principles Skill Builder skill (read-only; adapted and made harness-neutral). Its method text is the origin of SKILL.md steps 1-5.",
+  "hermes_contract_checked": [
+    "PluginContext.register_skill (read-only namespaced skill)",
+    "PluginContext.register_tool / register_hook(pre_tool_call approve)",
+    "plugins.plugin_storage.plugin_data_dir",
+    "tools.registry.registry.get_all_tool_names (read for host tool names; absence handled)"
+  ],
+  "privacy_scope": {
+    "credentials_read": false,
+    "account_stores_scanned": false,
+    "models_loaded": false,
+    "network_used": false,
+    "private_installs_modified": false
+  },
+  "sources": [
+    {
+      "package_path": "README.md",
+      "sha256": "7dc58357bb386e726d84a0e262831037921b6914bcd2cc368df441c69b0a703a"
+    },
+    {
+      "package_path": "VERIFICATION.md",
+      "sha256": "eb691f5fe380f34b928ea809aa6d8315bf021d0d0b934982f8d5b4e60e543e5a"
+    },
+    {
+      "package_path": "__init__.py",
+      "sha256": "f1b427531e393718caaa581adee1277abef063328aef842fbc4ea0318f10f1cc"
+    },
+    {
+      "package_path": "core.py",
+      "sha256": "b0c3ee830d6a0077e6cd419f33527d1c34e6cdcb894eaf231e9b95963abce7fd"
+    },
+    {
+      "package_path": "plugin.yaml",
+      "sha256": "a0f6c6dbcb586448cf6e9318acba95296c20144ccb52350ec822c26c1f176852"
+    },
+    {
+      "package_path": "retired_policy.py",
+      "sha256": "4aa299b24df5ea3060235ffbbc0d44b168042f7ac965f42813eccc9125f6c294"
+    },
+    {
+      "package_path": "skills/first-principles-skill-builder/SKILL.md",
+      "sha256": "6ec710c3893c6b9834446380d10523a6eaaef9708cedab6972c4ba5e72352a98"
+    },
+    {
+      "package_path": "tests/fixtures/bad.md",
+      "sha256": "21a67eef7f930f277e19d1e6280ac6f2cef59c2ac5d1b568d8e6109bfe0104ea"
+    },
+    {
+      "package_path": "tests/fixtures/good.md",
+      "sha256": "02f48e473cbb33a49dba27c0538c3a1157bb38901d0c797363428cc1ab615bba"
+    },
+    {
+      "package_path": "tests/test_builder.py",
+      "sha256": "83c5ca2664a83c7db7d7090ec8872cac46f933990f550da160fa2d7ced3d4fab"
+    },
+    {
+      "package_path": "tests/test_retired_policy.py",
+      "sha256": "0144b59d741a1c2e5b2ef0a8032e2d024a4689dd3dd6129488cbcb6d17bb1159"
+    }
+  ],
+  "quality_review": {
+    "date": "2026-11-10",
+    "method": "main-session source and contract review; actual registration capture; offline unit tests including a deliberately bad draft and an improved revision",
+    "scope": [
+      "resource decisions",
+      "worked flow",
+      "failure diagnosis",
+      "acceptance limits",
+      "schema alignment"
+    ],
+    "live_scope": "Not exercised: a real skill-building session in Hermes, the approval prompt, skillbuilder_install into a real skills folder, GPU/ROCm/Apple detection beyond nvidia-smi, Windows."
+  }
+}

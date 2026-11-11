@@ -1,0 +1,14 @@
+name: first-principles-skill-builder
+version: "0.1.0"
+description: "Build, check and improve agent skills that adapt to the tools, hardware and permissions you actually have: resource discovery, draft linting, contrasting-case evidence and revision history. Installing needs your approval."
+author: "First Principles Skill Builder contributors"
+license: GPL-3.0-or-later
+requires_hermes: ">=0.22.0"
+provides_tools:
+  - skillbuilder_resources
+  - skillbuilder_save
+  - skillbuilder_check
+  - skillbuilder_case
+  - skillbuilder_install
+provides_hooks:
+  - pre_tool_call
